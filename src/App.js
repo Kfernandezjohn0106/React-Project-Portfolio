@@ -5,6 +5,7 @@ import Particles from "react-particles-js";
 import Navbar from "./components/Navbar.js";
 import Header from "./components/Header.js";
 import AboutMe from "./components/Aboutme.js";
+import Services from "./components/Services.js";
 
 function App () {
   return (
@@ -22,12 +23,14 @@ function App () {
           color:"#f9ab00"
         }
       }}}}
+
+   />
       
-      
-      />
+    
       <Navbar />
       <Header />
       <AboutMe />
+      <Services />
     </React.Fragment>
   );
 }
