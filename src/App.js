@@ -6,7 +6,9 @@ import Navbar from "./components/Navbar.js";
 import Header from "./components/Header.js";
 import AboutMe from "./components/Aboutme.js";
 import Services from "./components/Services.js";
-import Experience from "./components/Experience";
+import Experience from "./components/Experience.js";
+import Testimonial from "./components/Testimonial.js";
+import TestimonialCarousel from "./components/TestimonialCarousel";
 
 
 function App () {
@@ -34,6 +36,7 @@ function App () {
       <AboutMe />
       <Services />
       <Experience />
+      <Testimonial />
     </React.Fragment>
   );
 }
