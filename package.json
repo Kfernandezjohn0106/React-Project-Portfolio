@@ -58,5 +58,6 @@
   "bugs": {
     "url": "https://github.com/Kfernandezjohn0106/React-Project-Portfolio/issues"
   },
-  "homepage": "https://github.com/Kfernandezjohn0106/React-Project-Portfolio#readme"
+  "homepage": "https://github.com/Kfernandezjohn0106/React-Project-Portfolio#readme",
+  "devDependencies": {}
 }
