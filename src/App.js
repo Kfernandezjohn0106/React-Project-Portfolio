@@ -8,7 +8,8 @@ import AboutMe from "./components/Aboutme.js";
 import Services from "./components/Services.js";
 import Experience from "./components/Experience.js";
 import Testimonial from "./components/Testimonial.js";
-import TestimonialCarousel from "./components/TestimonialCarousel";
+import Contacts from "./components/Contacts";
+
 
 
 function App () {
@@ -37,6 +38,7 @@ function App () {
       <Services />
       <Experience />
       <Testimonial />
+      <Contacts />
     </React.Fragment>
   );
 }
