@@ -5,11 +5,12 @@ import { useForm } from "react-hook-form";
 
 const Contacts = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, formState:{errors}} = useForm();
 
   const serviceID = "service_ID";
   const templateID = "template_ID";
   const userID = "user_jXvBExaF8OJMdzL2VhZD9";
+
 
   const onSubmit = (data, r) => {
     sendEmail(
@@ -35,7 +36,7 @@ const Contacts = () => {
   }
 
   return (
-    <div className="contacts">
+    <div id="contacts" className="contacts">
       <div className="text-center">
         <h1>contact me</h1>
         <p>Please fill out the form and describe you project needs and I'll contact you as soon as possible.</p>
@@ -51,11 +52,9 @@ const Contacts = () => {
                   type="text"
                   className="form-control"
                   placeholder="Name"
-                  nsme="name"
-                  
-                  
-                  ref={
-                    register({
+                  name="name"
+                  aria-invalid={errors.name ? "true" : "false"}
+                  {...register("name",{
                       required: "Please enter your name",
                       maxLength: {
                         value: 20,
@@ -76,8 +75,8 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Phone Number"
                   name="phone"
-                  ref={
-                    register({
+                  aria-invalid={errors.phone ? "true" : "false"}
+                  {...register("phone",{
                       required: "Please add your phone number",
                     })
                   }
@@ -94,8 +93,8 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Email"
                   name="email"
-                  ref={
-                    register({
+                  aria-invalid={errors.email ? "true" : "false"}
+                   {...register("email",{
                       required: "Please provide you email",
                       pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -116,8 +115,8 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Subject"
                   name="subject"
-                  ref={
-                    register({
+                  aria-invalid={errors.subject ? "true" : "false"}
+                  {...register("subject",{
                       required: "OOPS, you forget to add the subject.",
                     })
                   }
@@ -136,8 +135,8 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Please describe shortly you project..."
                   name="description"
-                  ref={
-                    register({
+                  aria-invalid={errors.description ? "true" : "false"}
+                  {...register("description",{
                       required: "Please describe shortly your project needs...",
                     })
                   }

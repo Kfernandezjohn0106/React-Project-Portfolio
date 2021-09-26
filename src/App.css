@@ -16,6 +16,7 @@
 
 body {
   font-family:"Robota Condensed" sans-serif !important;
+ 
 }
 
 
@@ -451,7 +452,7 @@ nav ul li {
 
 .contacts input:focus, .contacts textarea:focus {
   background: transparent;
-  color: var(--primary-orange);
+  color: var(--primary-red);
   border-bottom: 0.125rem solid var(--primary-dark-grey);
 }
 
@@ -462,7 +463,8 @@ nav ul li {
 .contact-btn {
   margin: 1rem 0 0 0;
   width: 100%;
-  background: none;
+  background: transparent;
+  color: var(--primary-red);
 }
 
 .line{
@@ -495,7 +497,7 @@ textarea.form-control {
 
 .sucees-message{
   font-weight:900;
-  color:var(--primary-red);
+  color: green;
 }
 
 @media(max-width: 768px) {

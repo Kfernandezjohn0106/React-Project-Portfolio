@@ -8,7 +8,7 @@ import AboutMe from "./components/Aboutme.js";
 import Services from "./components/Services.js";
 import Experience from "./components/Experience.js";
 import Testimonial from "./components/Testimonial.js";
-import Contacts from "./components/Contacts";
+import Contacts from "./components/Contacts.js";
 
 
 
