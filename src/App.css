@@ -10,6 +10,7 @@
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
   --primary-transparent-black: rgba(0,0,0,0.7);
+  --primary-black: #000000;
 
 
 }
@@ -495,7 +496,7 @@ textarea.form-control {
   text-align: left;
 }
 
-.sucees-message{
+.success-message{
   font-weight:900;
   color: green;
 }
@@ -512,6 +513,31 @@ textarea.form-control {
   .contacts p {
     padding: 0 0.4rem;
   }
+}
+
+.footer{
+
+  background: var(--primary-black);
+  color:var(--primary-dark-grey);
+  padding: 3rem;
+
+}
+
+.footer a {
+  text-decoration:none;
+  color:var(--primary-dark-grey);
+  cursor: pointer;
+
+}
+
+.footer a:hover {
+  text-decoration:none ;
+  color:var(--primary-red);
+  cursor:pointer;
+}
+
+.footer p{
+  margin-bottom: 0;
 }
 
 
